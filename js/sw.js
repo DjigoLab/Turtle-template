@@ -1,17 +1,8 @@
 //This is the "Offline page" service worker
-if (navigator.serviceWorker.controller) {
-    console.log('[PWA Builder] active service worker found, no need to register')
-} else {
-    //Register the ServiceWorker
-    navigator.serviceWorker.register('sw.js', {
-        scope: './'
-    }).then(function (reg) {
-        console.log('Service worker has been registered for scope:' + reg.scope);
-    });
-}
+
 //Install stage sets up the offline page in the cahche and opens a new cache
 self.addEventListener('install', function(event) {
-    var offlinePage = new Request('index.html');
+    var offlinePage = new Request('offline.html');
     event.waitUntil(
     fetch(offlinePage).then(function(response) {
       return caches.open('pwabuilder-offline').then(function(cache) {
@@ -28,7 +19,7 @@ self.addEventListener('install', function(event) {
       fetch(event.request).catch(function(error) {
           console.error( '[PWA Builder] Network request Failed. Serving offline page ' + error );
           return caches.open('pwabuilder-offline').then(function(cache) {
-            return cache.match('index.html');
+            return cache.match('offline.html');
         });
       }));
   });
