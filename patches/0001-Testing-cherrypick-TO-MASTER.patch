@@ -1,0 +1,25 @@
+From 172709920ecc683ef7a0c1a58b8d396ca7025279 Mon Sep 17 00:00:00 2001
+From: Antonio-Djigo <antonio@secret-source.eu>
+Date: Mon, 16 Apr 2018 13:05:04 +0100
+Subject: [PATCH] Testing cherrypick TO MASTER
+
+---
+ scss/styles.scss | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/scss/styles.scss b/scss/styles.scss
+index 5d92954..c30af8e 100644
+--- a/scss/styles.scss
++++ b/scss/styles.scss
+@@ -61,7 +61,7 @@ html {
+         padding: 10px;
+       }
+       & button {
+-        height: 2002px;
++        height: 80px;
+         width: 20%;
+         min-width: 120px;
+         align-self: center;
+-- 
+2.7.4
+
