@@ -1,0 +1,19 @@
+{
+    "lang": "en",
+    "dir": "ltr",
+    "name": "Djigo Turtle Template",
+    "short_name": "DTT",
+    "icons": [
+      {
+        "src": "assets/index.png",
+        "sizes": "192x192",
+        "type": "image\/png"
+      }
+    ],
+    "theme_color": "#222",
+    "background_color": "#222",
+    "start_url": "/",
+    "display": "standalone",
+    "orientation": "natural"
+  }
+  
