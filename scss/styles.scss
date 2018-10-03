@@ -4,6 +4,10 @@ $color2: #fff;
 $color3: #c1cdff;
 $color4: #cde7fd;
 $color5: #89b5ff;
+/*$color2: #f4cc70;
+$color3: #de7a22;
+$color4: #1e434c;
+$color5: #8d230f;*/
 
 $font-color1: #303340;
 
@@ -86,7 +90,7 @@ html {
       & h6 {
         margin: 20px;
         margin-top: 0px;
-        color: #c2c2c296;
+        color: #c2c2c2;
       }
     }
 
@@ -206,7 +210,59 @@ html {
   }
 }
 
- /**** SPOOOOKY Styles ****/
+.hero-bg {
+  background: url("../assets/forest-657902_1920.jpg") no-repeat center top;
+  background-size: cover;
+  text-align: center;
+  font-family: 'Dawning of a New Day', cursive;
+  color: #fff;
+  position: relative;
+  padding: 100px 0px;
+
+  @media (min-width:1200px) {
+    padding: 200px 0px;
+  }
+
+  @keyframes bg {
+    from {background-color: rgba(0, 0, 0, 0.7);}
+    to {background-color: rgba(0, 0, 0, 0.5);}
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); 
+    animation-name: bg;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;   
+  }
+
+  .hero-text {
+    width: 250px;
+    margin: 0px auto;    
+    position: relative;
+    z-index: 1;
+
+    @media (min-width: 768px){
+      width: 400px;
+    }
+  }
+
+  h1 {
+    font-family: 'Creepster', cursive;
+    margin-top: 0px;
+    //color: $color5;
+    font-size: 45px;
+  }
+
+  h4 {
+    font-size: 30px;
+    line-height: 1em;
+  }
+} /**** SPOOOOKY Styles ****/
           
           body.spooky #speedcapture {
 			  opacity: 0.25;
