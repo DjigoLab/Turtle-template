@@ -4,4 +4,5 @@ SPOOKY VERSION.
 Clone, checkout a branch, and start your work, then, simply PULL REQUEST!
 
   1- Antonio Djigo - https://github.com/DjigoLab
-  Lavinia - https://github.com/laviku
+  2- Lavinia - https://github.com/laviku
+  3- Cláudia Cruz Machado - https://github.com/ravenclaudia
