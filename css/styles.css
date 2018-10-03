@@ -174,7 +174,7 @@ html {
         -ms-grid-columns: 1fr;
             grid-template-columns: 1fr;
         grid-template-rows: repeat(auto-fit, minmax(50, 1fr));
-        width: 100%;
+        width: 60%;
         margin-left: auto;
         margin-right: auto;
         max-width: 1200px; }
@@ -196,9 +196,16 @@ html {
           resize: none;
           border: 0px; }
         html .wrapper .contact-form form .contact-button {
-          width: 50%;
+          width: 20%;
           border: 2px solid rgba(255, 255, 255, 0.267);
           padding: 10px;
+          border-radius: 7px;
+          justify-self: center; }
+
+        html .wrapper .contact-form form .contact-button:hover {
+          background: white;
+          color: rgba(39, 39, 39, 0.966);
+          border: 2px solid rgba(39, 39, 39, 0.966);}
           border-radius: 20%;
           -ms-grid-column-align: center;
               justify-self: center; }
