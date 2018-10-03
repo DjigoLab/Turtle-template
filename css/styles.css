@@ -148,3 +148,8 @@ html {
           padding: 10px;
           border-radius: 20%;
           justify-self: center; }
+          html .wrapper .fact-info{
+            margin: 0 auto;
+            text-align: justify;
+            width: 70%;
+          }
