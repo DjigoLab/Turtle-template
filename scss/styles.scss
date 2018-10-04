@@ -199,7 +199,7 @@ html {
           }
 
           .contact-button{
-            width: 50%;
+            width: 100%;
             border: 2px solid rgba(255, 255, 255, 0.267);
             padding: 10px;
             border-radius: 20%;
@@ -263,7 +263,9 @@ html {
     line-height: 1em;
   }
 } /**** SPOOOOKY Styles ****/
-          
+body.spooky {
+	position: relative;
+}
           body.spooky #speedcapture {
 			  opacity: 0.25;
 			  position:absolute;

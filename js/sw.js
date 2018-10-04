@@ -31,3 +31,9 @@ self.addEventListener('install', function(event) {
       return cache.put(offlinePage, response);
     });
   });
+  $("#booBtn").on('click', function() {
+    $("#scream").css("display", "block");
+    setTimeout( function() {
+      $("#scream").fadeOut(1000);
+    }, 200);
+  })
